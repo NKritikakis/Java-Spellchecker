@@ -3,4 +3,6 @@ public class SplitWord{
 		input.split("(?!^)");
 
 	}
+	//ΔΕΝ ΓΡΑΦΟΥΜΕ ΠΟΤΕ ΣΤΟΝ MASTER
+	
 }
