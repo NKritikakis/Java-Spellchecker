@@ -1,0 +1,6 @@
+public class SplitWord{
+	public void splitWord(String input){
+		input.split("(?!^)");
+
+	}
+}
