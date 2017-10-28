@@ -1,2 +1,3 @@
 # CorrectGr
-3ekiname ergasia simera
+Εργασία 3ου Εξαμήνου στο μάθημα Προγραμματισμός 2 Ακαδημαικό Έτος 2017-2018
+Θέμα : Spellchecker
