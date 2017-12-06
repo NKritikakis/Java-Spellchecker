@@ -18,7 +18,8 @@ public class DocumentReader extends Thread {
 			System.exit(0);
 		}
 		while(inputStream.hasNextLine()) {
-			// to our HashMap
+			// to our HashMap myMap = class.gethashMap();
+			//myMap.add(inputStream.nextLine());
 		}
 
 
