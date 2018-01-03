@@ -1,14 +1,18 @@
+package com.Java_Spellchecker_Team_Name;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
 public class DocumentReader extends Thread {
+	private Scanner keyboard;
+
+	
+	
+	
 	@Override
-	//Needs an object to run e.x DocumentReader object1 = new DocumentReader();
-	//object1.start();
 	public void run() {
 		System.out.print("Please insert the file's name:");
-		Scanner keyboard = new Scanner (System.in);
+		keyboard = new Scanner (System.in);
 		String fileName = keyboard.next();
 		Scanner inputStream = null;
 		try {
@@ -18,8 +22,7 @@ public class DocumentReader extends Thread {
 			System.exit(0);
 		}
 		while(inputStream.hasNextLine()) {
-			// to our HashMap myMap = class.gethashMap();
-			//myMap.add(inputStream.nextLine());
+			// to our HashMap
 		}
 
 
