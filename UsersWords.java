@@ -1,3 +1,4 @@
+package com.Java_Spellchecker_Team_Name;
 import java.util.LinkedList;
 public class UsersWords {
 	static LinkedList<String> myWords = new LinkedList<String>();
