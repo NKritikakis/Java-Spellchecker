@@ -1,19 +1,36 @@
-import java.net.*;
-import java.io.*;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
-public class URLReader {
-    public static void main(String[] args) throws Exception {
-		Scanner input = new Scanner(System.in);
-		System.out.println(" Please insert the url's name /the_file_you_want_to_read_from.txt: ");
-		String myURL = input.next();
-        URL oracle = new URL(myURL);
-        BufferedReader in = new BufferedReader(
-        new InputStreamReader(oracle.openStream()));
-
-        String inputLine;
-        while ((inputLine = in.readLine()) != null)
-            System.out.println(inputLine);
-        in.close();
+/**
+* Some comments for that class ... 
+* 
+* @author  Author name
+* @version 1.0
+*/
+public class DocumentReader extends Thread {
+  @Override
+  // Needs an object to run e.x DocumentReader object1 = new DocumentReader();
+  // object1.start();
+  /**
+  * Some comments ..
+  * ....
+  */
+  public void run() {
+    System.out.print("Please insert the file's name:");
+    Scanner keyboard = new Scanner(System.in);
+    String fileName = keyboard.next();
+    Scanner inputStream = null;
+    try {
+      inputStream = new Scanner(new File(fileName));
+    } catch (FileNotFoundException e) {
+      System.out.println("Error opening the file" + fileName);
+      System.exit(0);
     }
+    while (inputStream.hasNextLine()) {
+      // to our HashMap myMap = class.gethashMap();
+      // myMap.add(inputStream.nextLine());
+    }
+
+  }
 }
